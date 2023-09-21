@@ -44,7 +44,7 @@ def check_correctness_java(
     except OSError as e:
         if e.errno != errno.EEXIST:
             raise
-    path = os.path.join(base_path, f"main.{language}")
+    path = os.path.join(base_path, f"Main.{language}")
 
     with open(path, "w") as f:
         f.write(entire_string)
